@@ -1,0 +1,45 @@
+iframe {
+    width: 100%;
+    height: 60vh; /* Altura inicial para pantallas grandes */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.text {
+    margin-bottom: 1rem;
+}
+
+.texto {
+    text-align: center;
+    color: var(--color-blue-light);
+    font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    /* Estilos para pantallas medianas y grandes */
+    iframe {
+        height: 70vh; /* Ajuste de altura para pantallas medianas */
+    }
+    .texto {
+        font-size: 22px;
+    }
+
+    .container {
+        padding: 1rem 10%; /* Ajuste de relleno lateral para pantallas medianas */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* Estilos para pantallas grandes */
+    iframe {
+        height: 80vh; /* Ajuste de altura para pantallas grandes */
+    }
+    .texto {
+        font-size: 26px;
+    }
+}

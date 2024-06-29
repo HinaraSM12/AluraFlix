@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    justify-content: space-between; /* Espacio entre los elementos para empujar los botones a la derecha */
+    background-color: #010216;
+    padding: 20px; /* Reducir el padding para dispositivos móviles */
+}
+
+.header img {
+    max-width: 100%; /* Ajusta el tamaño del logo si es necesario */
+}
+.nav-link {
+    text-decoration: none; /* Quitar subrayado */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    text-decoration: none; /* Asegurar que no haya subrayado en estados de interacción */
+}
+
+
+
+.header .button-group {
+    display: flex;
+    gap: 1em; /* Espacio entre los botones */
+    margin-left: auto; /* Empuja el grupo de botones a la derecha */
+}
+
+@media (max-width: 920px) {
+    .header {
+        flex-direction: column; /* Cambia a columna para dispositivos móviles */
+        padding: 10px; /* Reducir el padding aún más para dispositivos móviles */
+        flex-wrap: wrap;
+    }
+
+    .header .button-group {
+        margin-left: 0; /* Reinicia el margen izquierdo para centrar los botones en dispositivos móviles */
+        margin-top: 10px; /* Agrega un margen superior para separar los botones del logo */
+        justify-content: center; /* Centra los botones horizontalmente */
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,89 @@
+.carrusel {
+  width: 100%;
+  padding: 32px;
+  box-sizing: border-box;
+  font-size: 32px;
+  position: relative;
+  background-color: transparent;
+}
+
+.carrusel h3 {
+  font-weight: 400;
+  color: #212121;
+  border-bottom: 4px solid;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.videos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 40px;
+  overflow-x: auto; 
+  overflow-y: hidden; 
+  -webkit-overflow-scrolling: touch; 
+  margin-bottom: 40px;
+}
+
+
+.videos::-webkit-scrollbar {
+  height: 10px; 
+}
+
+.videos::-webkit-scrollbar-thumb {
+  background-color: #2271D1; 
+  border-radius: 6px;
+  border: 3px solid #2271D1;
+}
+
+.videos::-webkit-scrollbar-track {
+  background-color: #1a314d;
+  border-radius: 6px; 
+  border: 3px solid #1a314d; 
+}
+
+/* Media Queries para Tablet */
+@media (max-width: 768px) {
+  .carrusel {
+    padding: 16px;
+    font-size: 24px;
+  }
+
+  .carrusel h3 {
+    font-size: 24px;
+    padding-bottom: 4px;
+  }
+
+  .videos {
+    gap: 20px;
+  }
+}
+
+/* Media Queries para Móvil */
+@media (max-width: 480px) {
+  .carrusel {
+    padding: 8px;
+    font-size: 18px;
+  }
+
+  .carrusel h3 {
+    font-size: 18px;
+    padding-bottom: 2px;
+  }
+
+  .videos {
+    gap: 20px;
+  }
+
+  .videoCard {
+    min-width: 300px;
+    height: 15rem;
+  }
+
+
+  .editar, .eliminar {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

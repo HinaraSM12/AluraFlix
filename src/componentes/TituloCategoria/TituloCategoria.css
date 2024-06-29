@@ -1,0 +1,26 @@
+.titulo {
+    border-radius: 10px;
+    font-weight: 1000;
+    font-family: "Montserrat", sans-serif;
+    padding: 15px 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 420px;
+    color: #F5F5F5;
+    background-color: #333333;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}

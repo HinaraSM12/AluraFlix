@@ -1,0 +1,53 @@
+.footer {
+    background-color: #010216;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.redes {
+    display: flex;
+    width:300px;
+    gap: 15px; /* Espacio entre las imágenes de redes sociales */
+    margin-left: 10px;
+}
+
+.redes img {
+    max-width: 50px; /* Ajusta el tamaño máximo de las imágenes de redes sociales */
+}
+
+
+.autor{
+    max-width:300px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        font-size: 14px;
+        flex-direction: column;
+        gap:10px;
+    }
+
+    .logo{
+        width: 100px;
+    }
+
+    .redes {
+        width:100%;
+        justify-content: center;
+    }
+
+    .redes img {
+        max-width: 20px; /* Reduce el tamaño de las imágenes de redes sociales para dispositivos móviles */
+    }
+}
