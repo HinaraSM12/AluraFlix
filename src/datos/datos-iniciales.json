@@ -137,12 +137,12 @@
       "descripcion": "Adentrándonos en Spring Framework"
     },
     {
+      "foto": "/videos/img 19.PNG",
       "id": "19",
       "titulo": "¿Qué es JavaScript?",
-      "categoria": "FRONT END",
-      "foto": "/videos/img 19.PNG",
+      "descripcion": "Introducción a JavaScript y su evolución.",
       "url": "https://www.youtube.com/embed/GJfOSoaXk4s?si=Sy4rvrikw1n4x2-o",
-      "descripcion": "Introducción a JavaScript y su evolución."
+      "categoria": "FRONT END"
     },
     {
       "foto": "/videos/img 21.PNG",
